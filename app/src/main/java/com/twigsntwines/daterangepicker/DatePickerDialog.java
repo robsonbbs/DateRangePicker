@@ -105,8 +105,8 @@ public class DatePickerDialog extends DialogFragment implements DatePickerFragme
 
     private void setupViewPager(ViewPager viewPager) {
         ViewpagerAdapter adapter = new ViewpagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new DatePickerFragment1(), "From");
-        adapter.addFragment(new DatePickerFragment2(), "To");
+        adapter.addFragment(new DatePickerFragment1(), getString(R.string.date_picker_first_tab));
+        adapter.addFragment(new DatePickerFragment2(), getString(R.string.date_picker_second_tab));
         viewPager.setAdapter(adapter);
     }
 }
